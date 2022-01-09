@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from 'react';
 import Card from './Card';
 import equilibriumImage from '../images/image-equilibrium.jpg';
 import avatar from '../images/image-avatar.png';

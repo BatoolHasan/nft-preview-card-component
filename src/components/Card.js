@@ -1,4 +1,5 @@
 import styled, { ThemeContext } from "styled-components";
+import React from 'react';
 import Label from './micro/Label';
 import{ useTheme } from 'styled-components';
 import viewIcon from '../images/icon-view.svg';

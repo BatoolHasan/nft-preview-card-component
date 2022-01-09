@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from 'react';
 const StyledContainer = styled.div`
 width:100%;
 height:100vh;

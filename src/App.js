@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import CardContainer from './components/CardContainer';
 import Footer from "./components/Footer";
