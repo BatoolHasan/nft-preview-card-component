@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# dont upload
+_index.html
+
 # testing
 /coverage
 
