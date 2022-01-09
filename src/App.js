@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { ThemeProvider } from 'styled-components';
+import CardContainer from './components/CardContainer';
+import Footer from "./components/Footer";
+import Container from './components/Container';
 function App() {
+  const theme = {
+    FontColor1: "hsl(215, 51%, 70%)",
+    FontColor2: "hsl(178, 100%, 50%)",
+    FontColor3: "hsl(0, 0%, 100%)",
+    MainBackground: "hsl(217, 54%, 11%)",
+    CardBackground: "hsl(216, 50%, 16%)",
+    HorizontalLine: "hsl(215, 32%, 27%)",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <main>
+        <Container>
+          <div>
+            <CardContainer />
+            <Footer
+              challengeUrl="hhttps://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"
+              repoUrl="https://github.com/BatoolHasan/nft-preview-card-component"
+            />
+          </div>
+        </Container>
+      </main>
+    </ThemeProvider>
   );
 }
 
